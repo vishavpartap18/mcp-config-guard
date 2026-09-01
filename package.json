@@ -1,0 +1,56 @@
+{
+  "name": "mcp-config-guard",
+  "displayName": "MCP Config Guard",
+  "description": "Catches the #1 documented cause of silent MCP server failures in Claude Code: servers defined in a config file that's never actually read. Flags it and fixes it in one click.",
+  "version": "0.1.0",
+  "publisher": "TODO-create-marketplace-publisher",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other",
+    "Linters"
+  ],
+  "keywords": [
+    "claude code",
+    "mcp",
+    "model context protocol",
+    "claude",
+    "config validator"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "mcpConfigGuard.checkNow",
+        "title": "MCP Config Guard: Check My Config",
+        "category": "MCP Config Guard"
+      },
+      {
+        "command": "mcpConfigGuard.fixFile",
+        "title": "MCP Config Guard: Move MCP Servers to the File Claude Code Actually Reads",
+        "category": "MCP Config Guard"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.85.0",
+    "@vscode/vsce": "^2.24.0",
+    "typescript": "^5.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TODO/mcp-config-guard"
+  }
+}
