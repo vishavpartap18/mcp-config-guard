@@ -3,7 +3,7 @@
   "displayName": "MCP Config Guard",
   "description": "Catches the #1 documented cause of silent MCP server failures in Claude Code: servers defined in a config file that's never actually read. Flags it and fixes it in one click.",
   "version": "0.1.0",
-  "publisher": "TODO-create-marketplace-publisher",
+  "publisher": "buildwithvishav",
   "license": "MIT",
   "engines": {
     "vscode": "^1.85.0"
@@ -51,6 +51,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/TODO/mcp-config-guard"
+    "url": "https://github.com/vishavpartap18/mcp-config-guard"
   }
 }
